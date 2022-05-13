@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stayl.css">
+</head>
+<body>
+    <div class="container-img">
+        <div class="content-img">
+            
+        </div>
+    </div>
+    <div class="container">
+        
+        <div class="nav">
+            <div class="celact">
+                <div class="logo">
+                    <a href="index.html"> <img src="./RASM/karzinka.png" alt="rasm"></a>
+                </div>
+                <div class="content">
+                    <a href="index.html">Bosh sahifa</a>
+                    <a href="malumot.html">Biz haqimizda</a>
+                    <a href="ulanish.html">Bog'lanish</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="option">
+            <p style="font-size: 60px;margin-top: 12vh;">TEZKOR, SIFATLI VA ARZON </p>
+            <p style="font-size: 28px;margin-top: 7vh;">Biz bilan hamkorlik qiling va sifatli mahsulotlarga ega bo'ling</p>
+            <button type="button" @click="" class="btn">Boshlash</button>
+        </div>
+    </div>
+
+    <section>
+        
+     <div class=""  id="bit">
+        <div class="na" v-for="object in objects">
+            <img :src="object.photo" alt="">
+            <p>{{object.name1}}</p>
+            <a :href="object.to" target="_blank" >bbcjeb</a>
+        </div>
+    </div>
+
+    </section>
+
+     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+     <script src="app.js"></script>
+</body>
+</html>

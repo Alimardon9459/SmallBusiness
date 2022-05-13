@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stayl.css">
+</head>
+<body>  
+    <div class="container">
+        <div class="content" id="content">
+
+            <h1>Ro'yhatdan o'tish</h1>
+            <br>  
+            <label for="fname">Ismingiz</label>
+            <br>
+            <input type="text" id="fname" name="fname" class="glass">
+            <br><br>
+            <label for="lname">Familiyangiz</label>
+            <br>
+            <input type="text" id="lname" name="lneme" class="glass" >
+            <br><br>
+            <label for="phone">Tel raqamingiz</label>
+            <br>
+            <input type="number" id="phone" name="phone" placeholder="+998991234567" class="glass">
+            <br><br>
+            <label for="date">Tug'ilgan yilingiz</label>
+            <br>
+            <input type="number" id="date" name="date" placeholder="1999" class="glass">
+            <br><br>
+            <button class="start" onclick="start()">Ro'yhatdan o'tish</button>
+          
+
+            
+
+        </div>
+        <div class="oyna" id="oyna">
+            <h3 id="lastneme"></h3>
+            <h3 id="forname"></h3>
+            <h3 id="tel"></h3>
+            <h3 id="year"></h3>
+            <h3 id="age"></h3>
+
+        </div>
+    </div>   
+    
+    <script>
+        function start(){
+           var fname=document.getElementById("fname")
+           var lname=document.getElementById("lname")
+           var phone=document.getElementById("phone")
+           var date =document.getElementById("date")
+           var d=new Date();
+           var age=d.getFullYear()
+           var year=date.value
+           var yoshi=age-year
+           console.log("Ismi:"+fname.value+"Familiyasi:"+lname.value+"Tel raqami:"+phone.value+"Tug'ilgan yili:"+date.value+"Yoshi:"+yoshi);
+           document.getElementById("content").style.display="none"
+           document.getElementById("oyna").style.display="block"
+           document.getElementById("lastneme").innerHTML="Ismi:"+fname.value
+           document.getElementById("forname").innerHTML="Familiyasi:"+lname.value
+           document.getElementById("tel").innerHTML="Tel raqami:"+phone.value
+           document.getElementById("year").innerHTML="Tug'ilgan yili:"+date.value
+           document.getElementById("age").innerHTML="Yoshi:"+yoshi
+       }
+   </script> 
+</body>
+</html>

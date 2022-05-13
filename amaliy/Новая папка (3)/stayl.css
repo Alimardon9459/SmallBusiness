@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../amaliy/rasmlar/bgimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baybut{
+    color: black;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.container .navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background: rgba(26, 95, 180, 0.24);
+}
+.container .navbar .content{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.container .navbar .content .logo , img{
+    width: 150px;
+    height: 50px;
+}
+.container .navbar .content .nav a{
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.container .navbar .content .nav select{
+    border: none;
+    background: none;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.container .comment{
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+}
+.container .comment p{
+    color: white;
+    font-weight: 500;
+}
+.but{
+    margin-top: 7vh;
+    padding: 15px 30px;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+}

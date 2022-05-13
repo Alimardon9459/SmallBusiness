@@ -1,0 +1,363 @@
+// @stem=Stem-Medium;
+$vaqt: 2s;
+*{
+    margin: 0;
+    width: 0;
+}
+.takrorsoz{
+    font-family: Stem-Medium;
+}
+
+.container{
+    width: 1440px;
+    height: 1620px;
+    background-color: rgb(13, 253, 13);
+}
+.Акції{
+    width: 94px;
+    height: 42px;
+    margin-left: 117px;
+    top: 1620.19px;
+    font-size: 40px;
+    line-height: 42px;
+}
+.and{
+    width: 465px;
+    height: 31px;
+    margin-left: 117px;
+    top: 1682.19px;
+    font-size: 24px;
+    line-height: 28px;
+}
+.content{
+    width: 1440px;
+    height: 448px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    .connect{
+        width: 1206px;
+        height: 448px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap ;
+
+        .bit:hover{ 
+            background-image: url("../rasmlar/2022-01-06_20-12-14.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: $vaqt;
+
+            .words,.word{ color: #FFFFFF;
+            }
+            .day{
+                color: rgba(255, 255, 255, 0.8);
+            }
+           
+           }          
+        .bit{
+            width: 346px;
+            height: 182px;
+            box-shadow: 0px 6.53254px 17.4201px -8.71006px rgba(0, 72, 153, 0.12), 0px 9.79882px 30.4852px rgba(0, 72, 153, 0.05), 0px 13.0651px 52.2604px 17.4201px rgba(0, 72, 153, 0.03);
+            border-radius: 4.35503px;
+            transition: 1s;
+            
+
+            .words{
+                width: 260px;
+                font-family: Stem-Medium;
+                font-size: 18px;
+                line-height: 21px;
+                align-items: center;
+                color: #454851;
+                margin-left: 16px;
+                margin-top: 13px;
+
+            }
+            .word{
+                width: 313px;
+                font-family: Stem-Regular;
+                font-size: 14px;
+                line-height: 16px;
+                color: rgba(69, 72, 81, 0.8);
+                margin-left: 16px;
+                margin-top: 10px;
+
+
+            }
+            .print{
+                width: 160px;
+                height: 43px;
+                border: none;
+                background: #00B5EC;
+                border-radius: 4.35503px;
+                margin-left: 16px;
+                margin-top: 22.3px;
+
+                p{
+                    width: 89px;
+                    height: 21px;
+                    font-family: Stem-Medium;
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-left: 28px;
+                    color: #ffff;
+                    
+                    
+                }
+            }
+
+            .day{
+                width: 118px;
+                height: 18px;
+                margin-left: 202px;
+                font-family: Stem-Regular;
+                font-size: 14px;
+                line-height: 16px;
+                color: rgba(160, 160, 160, 0.8);
+
+            }
+            
+        }
+    }
+
+}
+.start{
+    position: absolute;
+    width: 220px;
+    height: 50px;
+    left: 624px;
+    margin-top: 60px;
+    background: #454851;
+    border: none;
+    border-radius: 4px;
+
+    p{
+        width: 112px;
+        height: 22px;
+        font-family: Stem-Medium;
+        font-size: 20px;
+        line-height: 23px;
+        margin-left: 40px;
+        color: #FFFFFF;
+
+    }
+}
+.box{
+    width: 1440px;
+    height: 500px;
+    margin-top: 247px;
+    display: flex;
+    justify-content: space-between;
+
+    .basis{
+        height: auto;
+        width: auto;
+        margin-left: 117px;
+
+        .writ{
+            font-family: Stem-Medium;
+            font-size: 40px;
+            line-height: 42px;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+            color: #454851;
+        }
+
+        .writs{
+            font-family: Stem-Medium;
+            font-size: 24px;
+            line-height: 28px;
+            color: rgba(69, 72, 81, 0.8);
+            margin-top: 20px;
+        }
+        .text{
+            font-family: Stem-Regular;
+            font-size: 18px;
+            line-height: 24px;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+            color: rgba(69, 72, 81, 0.8);
+            margin-top: 40px;
+
+        }
+
+        .bath{
+            position: absolute;
+            width: 260px;
+            height: 50px;
+            background: #454851;
+            border-radius: 4px;
+            margin-top: 60px;
+            border: none;
+
+            span{
+                font-family: Stem-Medium;
+                font-size: 20px;
+                line-height: 23px;
+                color: #FFFFFF;
+            }
+        }
+        
+        .are{
+            position: absolute;
+            width: 260px;
+            height: 50px;
+            background: #00B5EC;
+            border-radius: 4px;
+            left: 401px;
+            margin-top: 60px;
+            border: none;
+
+            span{
+                font-family: Stem-Medium;
+                font-size: 20px;
+                line-height: 23px;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .photo{
+        width: auto;
+        height: auto;
+
+        .art{
+            width: 755px;
+            height: auto;
+        }
+    }
+}
+.advantage{
+    margin-left: 117px ;
+    font-family: Stem-Medium;
+    font-size: 40px;
+    line-height: 42px;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #454851;
+}
+.agro{
+    width: 186px;
+    margin-left: 117px;
+    margin-top: 20px;
+    font-family: Stem-Medium;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(69, 72, 81, 0.8);
+
+}
+.area{
+    width: 1383px;
+    height: 210px;
+    margin-top: 69px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 117px;
+
+    .section{
+        width: 220px;
+        height: 210px;
+        background: #FBFBFC;
+        transition: 1s;
+
+
+        .imgbit{
+            width: 135px;
+            height: 124px;
+            margin-left: 47px;
+            margin-top: 28px;
+        
+        }
+
+        .wordbit{
+            width: 169px;
+            height: 40px;
+            margin-left: 26px;
+            font-family: Stem-Medium;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: rgba(69, 72, 81, 0.8);
+        }
+    }
+
+    .section:hover{
+        width: 236.83px;
+        height: 225.36px;
+        background: #FFFFFF;
+        box-shadow: 0px 5.93064px 15.815px rgba(0, 72, 153, 0.12), 
+        0px 8.89595px 27.6763px rgba(0, 72, 153, 0.05),
+        0px 11.8613px 47.4451px rgba(0, 72, 153, 0.03);
+    }
+}
+.tugmazz{
+    border: none;
+    width: 220px;
+    height: 50px;
+    margin-left: 610px;
+    margin-top: 71px;
+    background: #454851;
+    border-radius: 4px
+    
+}
+.katta{
+    width: 1440px;
+    height: 530px;
+    margin-top: 114px;
+    display: flex;
+    justify-content: space-between;
+    background: #FBFBFC;
+
+    .kichik{
+        width: 481px;
+        height: 530px;
+        margin-left: 82px;
+    
+        .bigimg{
+            width: 481px;
+            height: 530px;
+        }
+    }
+    .bayt{
+        width: 722px;
+        height: 472px;
+
+        .pro{
+            width: 154px;
+            height: 42px;
+            margin-top: 154px;
+            font-family: Stem-Medium;
+            font-size: 40px;
+            line-height: 42px;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+            color: #454851;
+
+        }
+        .kop{
+            width: 544px;
+            height: 72px;
+            margin-top: 20px;
+            font-family: Stem-Regular;
+            font-size: 18px;
+            line-height: 24px;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+            color: rgba(69, 72, 81, 0.8);
+        }
+
+        .zb{
+            border: none;
+            width: 220px;
+            height: 50px;
+            margin-top: 60px;
+            background: #454851;
+            border-radius: 4px;
+
+            span{
+                font-family: Stem-Medium;
+                font-size: 20px;
+                line-height: 23px;
+                color: #FFFFFF;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stayl.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Talabalar ro'yhti</h2>
+            <table id="name">
+                <tr v-for="li in list" class="nav">
+                    <td>
+                        {{li.number}}
+                    </td>
+                    <td>
+                        {{li.name}}
+                    </td>
+                    <td>
+                        {{li.surname}}
+                    </td>
+                    <td>
+                        {{li.year}}
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+       
+    </div>        
+    
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <script>
+       
+        var add1=new Vue({
+            el:'#name',
+               data:{
+                    list:[
+                        { number:"Tr", name:"Ism",       surname:"Familiyas",  year:"Yil"},
+                        { number:1,    name:"Alimardon", surname:"Mullajonov", year:"2003"},
+                        { number:2,    name:"Anvar",     surname:"Karimov",    year:"2004"},
+                        { number:3,    name:"Alisher",   surname:"Qosimov",    year:"2000"},
+                        { number:4,    name:"Maxmudjon", surname:"Muqimjonov", year:"2001"},
+                        { number:5,    name:"Sobirjoin", surname:"To'xtasinov",year:"2006"},
+                    ]
+                }
+            })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#counter{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#counter .content{
+    width: 35%;
+    height: 50vh;
+    margin-top: 80px;
+    
+}
+#counter .content .rasm{
+    width: 100%;
+    height: 75%;
+}
+#counter .content .info{
+    width: 100%;
+    height: 25%;
+    background-color: darkgray;
+}  
+#counter .container .content .info .nomi{
+    padding-top: 10px;
+    text-align: center;
+} 
+
+#counter .container .content .info .bit .narxi{
+    margin-left:15px;
+    
+
+}
+#counter .container .content .info .bit{
+    position: relative;
+}
+#counter .container .content .info .bit button{
+    position: absolute;
+    bottom: 0px;   
+    left: 280px;
+    padding: 5px 5px;
+}

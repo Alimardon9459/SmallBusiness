@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stayl.css">
+    <script>
+        function myfunc(){
+    document.getElementById('salom').innerHTML='nima gaplar';
+}
+    </script>
+</head>
+<body>
+    <div class="content">
+        <h1>salom</h1>
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML=Date()">
+            hozirgi vaqt
+        </button>
+        <p id="demo"></p>
+    </div>
+    <div class="connect">
+        <p >hammaga salom nima gaplar?</p> <p id="hello"></p>
+        <button type="button"
+        onclick="document.getElementById('hello').innerHTML='man sizlarga savol berdim!'">click me</button>
+    </div>
+    <div class="container">
+        <button type="button" onclick="document.getElementById('lamp').src='../rasmlar/lamp.on.gif'">on the lamp</button>
+        <img id="lamp" src="../rasmlar/lamp.off.gif" alt="">
+        <button type="button"  onclick="document.getElementById('lamp').src='../rasmlar/lamp.off.gif'">off the lamp</button>
+    </div>
+    <div class="bit">
+        <p id="change">hello!. My name is Alimardon</p>
+        <button type="button"
+         onclick="document.getElementById('change').style.fontSize='35px'">change font size</button>
+    </div>
+    <div class="step">
+        <h1>Hello grup!</h1>
+        <p id="none">have you.I am good</p>
+        <button type="button" onclick="document.getElementById('none').style.display='none'">To Disappear</button>
+        <button type="button" onclick="document.getElementById('none').style.display='block'">Bask</button>
+    </div>
+    <div class="room">
+        <p id="tree" style="display: none;">Hammasiz zo'r bo'lad'i hali!</p>
+        <button type="button" onclick="document.getElementById('tree').style.display='block'" >Slogan</button>
+    </div>
+    <p id="salom">qalesizlar</p>
+    <button type="button" onclick="myfunc()">bosing</button> <br><br>
+    <button onclick="window.print()">Print this page</button>
+    <p id="wids">tugmani bos</p>
+    <p id="lord" style="display: none;">bos disam boso'rasanmi</p>  
+    <button type="button" onclick="ozgarish()">ha bos</button>
+    <p id="apple">ndjwhuh</p>
+    <script>
+        document.write("154\/2="+154/2);
+        console.log("55/5="+55/5);
+        function ozgarish(){
+            document.getElementById('wids').style.fontSize="55px"
+            document.getElementById('wids').style.color="red"
+            document.getElementById('lord').style.display="block"
+        }
+        var olma={rangi:'qizil', vazni:'350gr',tami:'sho\'r'};
+        document.getElementById("apple").innerHTML="olma-"+olma.tami;
+
+    </script>
+   
+    </body>
+</html>

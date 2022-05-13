@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stayle.css">
+</head>
+<body>
+
+    <div id="name">
+        <p>Count:{{count}}</p>
+        <button  @click="incr">Increment</button>
+        <button  @click="dencr">Decrement</button>
+    </div>  
+    <div id="container" >
+    <form>
+        <label for="fname">Ismingiz</label><br>
+        <input @input="fname=$event.target.value" :value="fname" type="text" id="fname"  ><br>
+        <label for="lname">Familiyangiz</label><br>
+        <input  @input="lname=$event.target.value" :value="lname" type="text" id="fname"><br>
+        <label for="email">Emailingiz</label><br>
+        <input  @input="email=$event.target.value" :value="email" type="email" id="emeil"><br>
+        <button type="button" @click="inputName">qo'shish</button>
+    </form>
+   
+        <div v-for="people in peoples">
+            <div class="content">
+                <h1>Ismi:{{people.fname}}</h1>
+                <h2>Familiyasi:{{people.lname}}</h2>
+                <p>Emaili:{{people.email}}</p>
+            </div>
+        </div>
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="main.js"></script>
+</body>
+</html>

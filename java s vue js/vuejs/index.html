@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Jadvalni to'ldirish uchun quidagilarni to'ldiring </h2>
+        <form action="">
+            <label for="fname">Ismingiz:</label>
+            <br>
+            <input @input="fname=$event.target.value" :value="fname" type="text" name="fname" id="fname">
+            <br><br>
+            <label for="sorname">Familiyasi:</label>
+            <br>
+            <input @input="sorname=$event.target.value" :value="sorname" type="text" name="sorname" id="sorname">
+            <br><br>
+            <label for="year">Tug'ilgan yili:</label>
+            <br>
+            <input @input="year=$event.target.value" :value="year" type="text" name="year" id="year" placeholder="2000.01.20">
+            <br><br>
+            <label for="phone">Tel raqami</label>
+            <br>
+            <input @input="phone=$event.target.value" :value="phone" type="number" name="phone" id="phone">
+            <br><br>
+            <label for="email">Email:</label>
+            <br>
+            <input @input="email=$event.target.value" :value="email" type="email" name="email" id="email">
+            <br><br>
+            <button type="button" @click="plas()" >Jadvalga joylash</button>
+
+        </form>
+
+        <h2>Jadval nomi </h2>
+
+        <table>
+
+            <tr>
+
+                <th>
+                    Tr
+                </th>
+                <th>
+                    Ismi
+                </th>
+                <th>
+                    Familiyasi
+                </th>
+                <th>
+                    Tel raqami
+                </th>
+                <th>
+                    Emaili
+                </th>
+
+            </tr>
+
+            <tr v-for="people in peoples">
+
+                <td>
+                    {{people.id}}
+                </td> 
+                <td>
+                    {{people.fname}}
+                </td> 
+                <td>
+                    {{people.sorname}}
+                </td>
+                <td>
+                    {{people.phone}}
+                </td> 
+                <td>
+                    {{people.email}}
+                </td>
+
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+    <script>
+        var score =30
+        var result =  score>40? "5":"4"
+            console.log(result)
+        var list=[
+                   { number:"Tr", name:"Name",surname:"Surname", year:"Year"},
+                   { number:1, name:"Alimardon",surname:"Mullajonov",year:"2003"    },
+                   { number:2, name:"Anvar",surname:"Karimov",year:"2000"    },
+                   { number:3, name:"Alisher",surname:"Qosimov",year:"2000"    },
+                   { number:4, name:"Maxmudjon",surname:"Muqimjonov",year:"2001"    },
+                   { number:5, name:"Sobirjoin",surname:"To'xtasinov",year:"2006"    }
+                ]
+        var year =list.map(function(s){  // es6 funktion     var year =list.map(s=>
+            return s.name
+        })
+        console.log(year);
+
+        var year = list.filter(function(list){     // es6 funktion    var year = list.filter( list =>
+        return list.name==="Alimardon" && list.year==="2000"
+        })
+        console.log(year);
+     a=(n1,n2)=>{
+            var as=n1+n2
+            return as
+        }
+        console.log(a(48484,78788484)+454  );
+    </script>
+    <script src="es6a.js"></script>
+
+</body>
+</html>

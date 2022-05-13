@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <link rel="stylesheet" href="../animate/WOW-master/css/libs/animate.css">
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <p id="ism"></p>
+    <p id="salom"></p>
+    <button type="button" onclick="this.innerHTML='soat'">vaqt</button>
+    <button type="button"onclick="vaqt()">hozirgi vaqt</button>
+    <p id="time"></p>
+    <div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+    <p id="ali">hammaga salom</p>
+
+    <button type="button" onclick="ozgar()" >bosss</button>
+    <p style="font-size: 25px;">
+        at corporis veritatis doloremque itaque nobis, asperiores cum reprehenderit fuga aliquam adipisci soluta.
+    </p>
+    <img src="../rasmlar/img1.png" alt="" class="img-responsive wow slideInleft">
+    <p class="wow slideInRight"></p>
+    <input type="text" id="name" min="3" max="32" placeholder="Ismingiz" > 
+    <br><br>
+    <input type="number" id="tel" minlength="7" maxlength="11" max  placeholder="Telifon raqamingiz">
+    <br><br>
+    <button  type="button" onclick="elon()" > Jo'natish</button>
+    <p id="print"></p>
+    <P id="over"></P>
+
+
+
+
+
+ 
+
+
+
+<script src="javaa.js"></script>
+<script>
+  
+
+    function vaqt(){
+        document.getElementById("time").innerHTML=Date();
+    }
+// Create an object:
+const person = {
+  firstName: "Zinatillo",
+  lastName: "Xamraliyev",
+  age:"17da",
+  fullName: function() {
+    return this.firstName + " " + this.lastName+" "+"mening yoshm-"+this.age;
+  }
+};
+
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.fullName();
+const inson={
+    name:"Alimardon",
+    lastname:"Mullajonov",
+    qiziqishi:"dasturlash",
+    toliqism: function(){
+        return this.name+" "+this.lastname;
+    }
+}
+document.getElementById("ism","salom").innerHTML=inson.toliqism ;
+var a="13"
+const b=13
+console.log(a==b);
+
+
+
+
+var ka=35,hd=35;
+function ozgar(){
+if(ka<hd){
+    document.getElementById("ali").style.fontSize="35px";
+}
+else if(ka==hd){
+    document.getElementById("ali").style.display="none"
+}
+else{
+    document.getElementById("ali").innerHTML="salom Sanjar aka"
+}
+}
+
+</script>
+
+</body>
+</html>
